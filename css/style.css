@@ -1,0 +1,27 @@
+/* Default e utility */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: red;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+.flex{
+  display: flex;
+}
+/* Default e utility */
