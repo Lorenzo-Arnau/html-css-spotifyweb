@@ -98,7 +98,7 @@ nav ul>li{
 }
 .main-block{
   width: 100%;
-  border: 1px #000 solid;
+  padding-top: 20px;
   color: #fff;
 }
 .home{
@@ -163,12 +163,21 @@ border-radius: 50%;
 .artist-zone img{
   width: 230px;
 }
-.main-head h4,.main-head h1,.main-head h2{
+.main-head h4,.main-head h2{
   margin:5px 0px 20px 20px;
+}
+.main-head h2{
+  font-size: 35px;
+}
+.main-head h4{
+  color: #ccc;
+  font-size: 16px;
+}
+.artist-zone h4,.artist-zone h3{
+  margin: 10px 0px;
 }
 .artist-zone h4{
   color: #ccc;
-  margin: 20px 0px;
 }
 .main-block:last-child{
   padding-bottom: 100px;
