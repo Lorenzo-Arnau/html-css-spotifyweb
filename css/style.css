@@ -38,7 +38,7 @@
   height: 100%;
   width: calc(100% - 250px);
   overflow-y: auto;
-  background-color: pink;
+  background-color: #141922;
 }
 .player-sec{
   width: 100vw;
@@ -60,13 +60,13 @@
 .head-bar{
   width: 100%;
   height: 90px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #080B12;
 
 }
 nav{
   height: 50px;
   width: 100%;
-  background-color: blue;
+  background-color: #141922;
 
 }
 nav ul{
@@ -76,6 +76,8 @@ nav ul{
 nav ul>li{
   display: inline-block;
     text-align: center;
+    color: #ccc;
+    padding:0px 10px;
 }
 .menu-one{
   flex-direction: column;
@@ -95,9 +97,9 @@ nav ul>li{
   z-index: 3;
 }
 .main-block{
-  height: 300px;
   width: 100%;
   border: 1px #000 solid;
+  color: #fff;
 }
 .home{
   margin-bottom: 20px;
@@ -144,4 +146,30 @@ margin-right: 5px;
 .menu-two li:nth-child(2) img{
 background-color: #ccc;
 border-radius: 50%;
+}
+.artist-zone{
+  width: 100%;
+  text-align:center;
+}
+.one{
+  justify-content: space-around;
+}
+.radar,.mixdaily,.youg,.einaudi{
+  padding: 20px;
+}
+.youg img,.einaudi img{
+  border-radius: 50%;
+}
+.artist-zone img{
+  width: 230px;
+}
+.main-head h4,.main-head h1,.main-head h2{
+  margin:5px 0px 20px 20px;
+}
+.artist-zone h4{
+  color: #ccc;
+  margin: 20px 0px;
+}
+.main-block:last-child{
+  padding-bottom: 100px;
 }
