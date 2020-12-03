@@ -165,9 +165,7 @@ border-radius: 50%;
 .one{
   flex-wrap: wrap;
 }
-.cover{
-  width: 250px;
-}
+
 .radar,.mixdaily,.youg,.einaudi,.cover{
   margin-right: 15px;
 }
@@ -279,7 +277,6 @@ border-radius: 10px;
     height: 100%;
     width: 90%;
   }
-
   .sidebar-content{
     overflow-y: auto;
   }
@@ -296,6 +293,7 @@ border-radius: 10px;
   }
   .player-line{
     width: 10px;
+    margin: 0px;
   }
   .right-player .player-line{
     width: 10px;
@@ -338,5 +336,17 @@ border-radius: 10px;
   }
   .center-player span{
     font-size: 10px;
+  }
+  .cover{
+    width: 130px;
+  }
+  .artist-zone img{
+    width: 130px;
+  }
+  .main{
+    font-size: 0.6em;
+  }
+  .main-head h2{
+    font-size: 25px;
   }
 }
