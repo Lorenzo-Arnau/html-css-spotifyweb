@@ -109,7 +109,7 @@ nav ul>li{
 .home{
   margin-bottom: 20px;
 }
-.home li{
+.home li,.playlist li{
   padding: 5px 10px;
 }
 .home li img{
@@ -120,14 +120,14 @@ nav ul>li{
   width: 150px;
   margin-bottom: 10px;
 }
+.phone-logo{
+  display: none;
+}
 .playlist button{
   width: 45px;
   height: 45px;
   vertical-align: middle;
   margin-bottom: 10px;
-}
-.playlist li{
-  padding: 5px 10px;
 }
 .playlist-title{
   font-weight: bold;
@@ -165,6 +165,9 @@ border-radius: 50%;
 .one{
   flex-wrap: wrap;
 }
+.cover{
+  width: 250px;
+}
 .radar,.mixdaily,.youg,.einaudi,.cover{
   margin-right: 15px;
 }
@@ -172,7 +175,7 @@ border-radius: 50%;
   border-radius: 50%;
 }
 .artist-zone img{
-  width: 230px;
+  width: 250px;
 }
 .main-head h4,.main-head h2{
   margin:5px 0px 20px 20px;
@@ -197,7 +200,7 @@ border-radius: 50%;
   height: 60px;
   margin:0px 10px;
 }
-.cover,.title-song,.love-store{
+.little-cover,.title-song,.love-store{
   display: inline-block;
   vertical-align: middle;
 }
@@ -248,4 +251,92 @@ border-radius: 10px;
 .right-player .player-line{
   margin-right: 5px;
   width: 150px;
+}
+.phone-specs{
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS */
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* CSS */
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .sidebar{
+    width: 10%;
+  }
+  .main{
+    height: 100%;
+    width: 90%;
+  }
+
+  .sidebar-content{
+    overflow-y: auto;
+  }
+  .sidebar-content li a,.logo,.playlist li a,.playlist-title{
+    display: none;
+  }
+  .sidebar-content li{
+  text-align: center;
+  }
+  .phone-logo{
+    display: block;
+    background-color: #fff;
+    color: #fff;
+  }
+  .player-line{
+    width: 10px;
+  }
+  .right-player .player-line{
+    width: 10px;
+  }
+  .left-player img{
+    height: 30px;
+    margin:0px 5px;
+  }
+  .center-player-controls i{
+    padding:0px 0px;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .center-player-controls .fa-play-circle-o{
+    font-size: 20px;
+  }
+  .love-store{
+    margin-left: 0px;
+  }
+  .love-store i,.right-player i{
+    padding: 0px;
+    font-size: 15px;
+    color: #ccc;
+  }
+  .phone-specs{
+    display: block;
+  }
+  .title-song h3{
+  font-size: 12px;
+  }
+  .title-song h4{
+  font-size: 10px;
+  }
+  .menu-two ul{
+    padding: 0px 0px;
+  }
+  .home li,.playlist li,.menu-two li{
+    padding: 5px 0px;
+  }
+  .center-player span{
+    font-size: 10px;
+  }
 }
