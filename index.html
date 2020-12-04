@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Main wrapper and central container  -->
   <div class="wrapper">
     <div class="container">
+      <!-- Sidebar left -->
       <div class="sidebar fl">
         <div class="sidebar-content flex">
           <div class="menu-one flex">
@@ -19,9 +21,9 @@
               <ul>
                 <li class="logo"><img src="img/logo.svg" alt=""></li>
                 <li class="phone-logo"><img src="img/logo-small.svg" alt=""></li>
-                <li><img src="img/home.svg" alt=""><a href="#"> Home</a></li>
-                <li><img src="img/search.svg" alt=""><a href="#"> Cerca</a></li>
-                <li><img src="img/libreria.svg" alt=""><a href="#"> La tua libreria</a></li>
+                <li><img src="img/home.svg" alt=""><a href="#" class="bl-strong colored-white"> Home</a></li>
+                <li><img src="img/search.svg" alt=""><a href="#" class="colored-dark-grey"> Cerca</a></li>
+                <li><img src="img/libreria.svg" alt=""><a href="#" class="colored-dark-grey"> La tua libreria</a></li>
               </ul>
             </div>
             <div class="playlist">
@@ -39,30 +41,37 @@
           </div>
           <div class="menu-two">
             <ul>
-              <li><img src="img/download.svg" alt=""><a href="#"> installa app</a></li>
-              <li><img src="img/profile.svg" alt=""><a href="#"> JOHN DOE</a></li>
+              <li><img src="img/download.svg" alt=""><a href="#" class="colored-dark-grey"> installa app</a></li>
+              <li><img src="img/profile.svg" alt=""><a href="#" class="bl-strong colored-white"> JOHN DOE</a></li>
             </ul>
           </div>
-
         </div>
-
       </div>
+      <!-- /Sidebar left -->
+
+      <!-- Header main -->
       <div class="head-bar">
         <div class="upgrade flex">
           <div>EFFETTUA L'UPGRADE</div>
         </div>
       </div>
+      <!-- /Header main -->
+
+      <!-- Main part navbar -->
       <div class="main fl">
         <nav>
           <ul>
-            <li>IN EVIDENZA</li>
-            <li>PODCAST</li>
-            <li>CLASSIFICHE</li>
-            <li>GENERI E MOOD</li>
-            <li>NUOVE USCITE</li>
-            <li>SCOPRI</li>
+            <li class="colored-dark-grey bl-strong">IN EVIDENZA</li>
+            <li class="colored-dark-grey bl-strong">PODCAST</li>
+            <li class="colored-dark-grey bl-strong">CLASSIFICHE</li>
+            <li class="colored-dark-grey bl-strong">GENERI E MOOD</li>
+            <li class="colored-dark-grey bl-strong">NUOVE USCITE</li>
+            <li class="colored-dark-grey bl-strong">SCOPRI</li>
           </ul>
         </nav>
+        <!-- Main part navbar -->
+
+        <!-- Main content -->
         <div class="main-block one">
           <div class="main-head">
             <h2>Recently Played</h2>
@@ -149,23 +158,25 @@
             <div class="cover youg">
               <div class="image-container">
                 <div class="play-hover circle"></div>
-                <img src="img/youg.jpeg" alt="">
+                <img src="img/youg.jpeg" alt="" class="circle">
               </div>
               <h3>Lana Del Rey</h3>
             </div>
             <div class="cover einaudi">
               <div class="image-container">
                 <div class="play-hover circle"></div>
-                <img src="img/einaudi.jpeg" alt="">
+                <img src="img/einaudi.jpeg" alt="" class="circle">
               </div>
               <h3>Ludovico Einaudi</h3>
             </div>
           </div>
         </div>
-
       </div>
-
+      <!-- main content -->
     </div>
+    <!-- /central container -->
+
+    <!-- Boottom bar -->
     <div class="player-sec flex">
       <div class="left-player">
         <div class="little-cover">
@@ -190,8 +201,8 @@
           <span>0.25</span>
           <div class="player-line">
             <div class="progression-bar">
+              <div class="circle"></div>
             </div>
-            <i class="fa fa-eercast" aria-hidden="true"></i>
           </div>
           <span>4.35</span>
         </div>
@@ -201,11 +212,14 @@
         <i class="fa fa-television" aria-hidden="true"></i>
         <i class="fa fa-volume-up" aria-hidden="true"></i>
         <div class="player-line">
-          <div class="progression-bar"></div>
+          <div class="progression-bar">
+            <div class="circle"></div>
+          </div>
         </div>
       </div>
     </div>
-
+    <!-- Boottom bar -->
   </div>
+  <!-- Main wrapper -->
   </body>
 </html>
