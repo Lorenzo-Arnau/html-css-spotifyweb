@@ -225,6 +225,7 @@ nav ul>li:hover{
 }
 .artist-zone img{
   width: 100%;
+  vertical-align: middle;
 }
 .cover{
   width: calc((100% / 6)* 1 - 30px);
