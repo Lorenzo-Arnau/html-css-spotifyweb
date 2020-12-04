@@ -238,7 +238,7 @@ nav ul>li:hover{
 .main-head h2{
   font-size: 35px;
 }
-.main-head h4{
+.main-head h4,.title-song h3{
   font-size: 16px;
 }
 .artist-zone h4,.artist-zone h3{
@@ -257,9 +257,6 @@ nav ul>li:hover{
 .little-cover,.title-song,.love-store{
   display: inline-block;
   vertical-align: middle;
-}
-.title-song h3{
-font-size: 15px;
 }
 .title-song h4{
 font-size: 12px;
@@ -424,7 +421,7 @@ border-radius: 10px;
   .sidebar-content{
     overflow-y: auto;
   }
-  .sidebar-content li a,.logo,.playlist li a,.playlist-title{
+  .sidebar-content li a,.logo,.playlist li a,.playlist-title,button{
     display: none;
   }
   .sidebar-content li{
