@@ -31,6 +31,10 @@
 .colored-white{
   color: #fff;
 }
+.no-deco{
+  list-style: none;
+  text-decoration: none;
+}
 /* /Default e utility */
 
 /* Layout container and parts */
@@ -82,12 +86,11 @@
   flex-direction: column;
   height: calc(100% - 80px)
 }
-.home li,.sidebar-content li a{
-  list-style: none;
-  text-decoration: none;
-}
 .home{
   margin-bottom: 20px;
+}
+.home-ico{
+  border-left: 2px #ADFF2F solid;
 }
 .home li:hover{
   border-left: 2px #ADFF2F solid;
@@ -115,22 +118,14 @@
   vertical-align: middle;
   margin-bottom: 10px;
 }
-.playlist-title{
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 .playlist{
   overflow-y: auto;
-}
-.playlist li a{
-  color: #717171;
 }
 /* /playlist,list */
 
 /* Second menu,download and user */
 .menu-two ul{
   padding: 0px 5px;
-  list-style: none;
 }
 .menu-two li{
   padding: 10px;
@@ -148,14 +143,11 @@
 }
 .menu-two li:nth-child(2) img{
   background-color: #717171;
-  border-radius: 50%;
 }
 /* /Second menu,download and user */
-
 /* /Sidebar style */
 
 /* Main part */
-
 /* main part header */
 .head-bar{
   width: 100%;
@@ -171,8 +163,6 @@
   border: 1px #fff solid;
   text-align: center;
   border-radius: 20px;
-  color: #fff;
-  z-index: -10;
 }
 .upgrade div:hover{
   padding: 15px;
@@ -187,17 +177,14 @@ nav{
 }
 nav ul{
   text-align: center;
-  padding-top: 10px;
 }
 nav ul>li{
   display: inline-block;
-  text-align: center;
-  padding:0px 10px;
+  padding:10px 10px;
   cursor: pointer;
 }
 nav ul>li:hover{
   border-bottom: 2px #ADFF2F solid;
-  padding-bottom: 5px;
   color: #fff;
 }
 /* /main part nav */
@@ -206,7 +193,6 @@ nav ul>li:hover{
 .main-block{
   width: 100%;
   padding-top: 20px;
-  color: #fff;
 }
 .play-hover{
   width: 100%;
@@ -248,14 +234,10 @@ nav ul>li:hover{
   font-size: 35px;
 }
 .main-head h4{
-  color: #717171;
   font-size: 16px;
 }
 .artist-zone h4,.artist-zone h3{
   margin: 10px 0px;
-}
-.artist-zone h4{
-  color: #717171;
 }
 .main-block:last-child{
   padding-bottom: 100px;
@@ -347,7 +329,7 @@ border-radius: 10px;
   display: inline-block;
 }
 .right-player .player-line .progression-bar{
-width: 70%;
+ width: 70%;
 }
 .phone-specs{
   display: none;
@@ -365,7 +347,11 @@ width: 70%;
     width: 40px;
   }
   .right-player i{
-    padding: 5px;
+    padding: 3px;
+    font-size: 18px;
+  }
+  .right-player .player-line{
+    width: 70px;
   }
 }
 @media (max-width: 992px) {
@@ -375,6 +361,7 @@ width: 70%;
   }
   .player-line{
     margin: 0px;
+    width: 200px;
   }
   .right-player .player-line{
     width: 80px;
@@ -383,22 +370,12 @@ width: 70%;
     height: 40px;
     margin:0px 5px;
   }
-  .center-player-controls i{
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 15px;
-  }
   .center-player-controls .fa-play-circle-o{
-    font-size: 25px;
+    font-size: 30px;
   }
   .love-store{
     margin-left: 0px;
-    align-items: center;
     width: 10px;
-  }
-  .love-store i,.right-player i{
-    font-size: 10px;
-    color: #717171;
   }
   .title-song h3{
   font-size: 12px;
@@ -421,14 +398,21 @@ width: 70%;
   nav ul>li{
     padding-top: 10px;
   }
+  .love-store i,.right-player i{
+    padding: 0px 3px;
+    font-size: 15px;
+  }
+  .right-player .player-line{
+    width: 70px;
+  }
 }
-}
+
+
 @media (max-width: 768px) {
 
   .cover{
   width: calc((100% / 2)* 1 - 30px);
   }
-
 }
 @media (max-width: 576px) {
 
@@ -467,14 +451,9 @@ width: 70%;
   }
   .center-player-controls i{
     padding:0px 10px;
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 15px;
   }
   .love-store i,.right-player i{
     padding: 0px 3px;
-    font-size: 15px;
-    color: #717171;
   }
   .phone-specs{
     display: block;
@@ -489,7 +468,10 @@ width: 70%;
     font-size: 10px;
   }
   .cover{
-  width: calc((100% / 2)* 1 - 30px);
+    width: calc((100% / 2)* 1 - 30px);
+  }
+  .right-player .player-line{
+    display: none;
   }
 }
 @media (max-width: 400px){
@@ -499,10 +481,11 @@ width: 70%;
   .center-player-controls i{
     padding:0px 3px;
     font-size: 15px;
-    color: #fff;
-    margin-bottom: 15px;
   }
-  .love-store{
+  .love-store,.fa-volume-up{
     display: none;
+  }
+  .title-song{
+    margin-left: 5px;
   }
 }
