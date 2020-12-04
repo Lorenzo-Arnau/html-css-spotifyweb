@@ -65,7 +65,6 @@
   height: 90px;
   background-color: #282828;
   position: absolute;
-  justify-content: space-between;
   align-items: center;
 }
 /* /Layout container and parts */
@@ -94,6 +93,9 @@
 }
 .home li:hover{
   border-left: 2px #ADFF2F solid;
+}
+.home li:hover:first-child{
+  border-left:none;
 }
 .home li,.playlist li{
   padding: 5px 10px;
@@ -255,13 +257,12 @@ nav ul>li:hover{
 }
 .title-song h3{
 font-size: 15px;
-color: #fff;
-font-weight: bold;
 }
 .title-song h4{
 font-size: 12px;
-color: #717171;
-font-weight: bold;
+}
+.title-song h3:hover,.title-song h4:hover{
+  text-decoration: underline;
 }
 .love-store{
   margin-left: 40px;
@@ -269,19 +270,17 @@ font-weight: bold;
 .love-store i,.right-player i{
   padding: 10px;
   font-size: 20px;
-  color: #717171;
+}
+.love-store i:hover,.right-player i:hover{
+  transform: scale(1.2);
 }
 .center-player-controls i{
   padding:0px 20px;
   font-size: 25px;
-  color: #fff;
   margin-bottom: 15px;
 }
 .center-player-controls .fa-play-circle-o{
   font-size: 35px;
-}
-.center-player span{
-  color: #fff;
 }
 .center-player-controls{
   text-align: center;
@@ -294,12 +293,11 @@ background-color: #5A5A5A;
 display: inline-block;
 position: relative;
 bottom: 5px;
-margin: 0 40px;
 border-radius: 10px;
 }
 .right-player .player-line{
   margin-right: 5px;
-  width: 150px;
+  width: 100px;
 }
 .progression-bar{
   height: 100%;
@@ -363,9 +361,6 @@ border-radius: 10px;
     margin: 0px;
     width: 200px;
   }
-  .right-player .player-line{
-    width: 80px;
-  }
   .left-player img{
     height: 40px;
     margin:0px 5px;
@@ -401,9 +396,6 @@ border-radius: 10px;
   .love-store i,.right-player i{
     padding: 0px 3px;
     font-size: 15px;
-  }
-  .right-player .player-line{
-    width: 70px;
   }
 }
 
@@ -443,7 +435,10 @@ border-radius: 10px;
     margin: 0px;
   }
   .right-player .player-line{
-    width: 50px;
+   display: none;
+  }
+  .right-player:hover .player-line{
+   display: inline-block;
   }
   .left-player img{
     height: 30px;
@@ -470,14 +465,9 @@ border-radius: 10px;
   .cover{
     width: calc((100% / 2)* 1 - 30px);
   }
-  .right-player .player-line{
-    display: none;
-  }
+
 }
 @media (max-width: 400px){
-  .right-player .player-line{
-    display: none;
-  }
   .center-player-controls i{
     padding:0px 3px;
     font-size: 15px;
