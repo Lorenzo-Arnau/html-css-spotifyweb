@@ -188,12 +188,23 @@ nav ul{
 }
 nav ul>li{
   display: inline-block;
-  padding:10px 10px;
+  padding:20px 10px 5px 10px;
   cursor: pointer;
 }
-nav ul>li:hover{
+nav ul>li:first-child{
+  position: relative;
+}
+nav ul>li[class*="colored-dark-grey"]:hover{
   border-bottom: 2px #ADFF2F solid;
   color: #fff;
+}
+.page-selected{
+  width: 50px;
+  margin-top: 5px;
+  left: 50%;
+  border: 1px #ADFF2F solid;
+  transform: translate(-50%,0%);
+  position: absolute;
 }
 /* /main part nav */
 
@@ -342,6 +353,14 @@ border-radius: 10px;
 .center-player{
   width: 60%;
 }
+/* TODO: Only works with others TODO's done*/
+.song{
+  width: 20px;
+  height:20px;
+  position: relative;
+  top: 1px;
+}
+
 /* bottom player */
 @media (max-width: 1373px){
   .love-store{
