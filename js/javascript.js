@@ -13,3 +13,10 @@ if (name !== "") {
     createFor.innerText = 'Creato per '+ name;
     sideName.innerText = name;
 };
+ var playClick = document.getElementById('play');
+ var playBar = document.getElementById('playBar');
+ playClick.addEventListener('click',
+   function() {
+     playBar.innerHTML = '<audio src="audio/ACDC.mp3" type="audio/mpeg" class="song" autoplay controls>'
+   }
+ );

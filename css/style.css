@@ -363,10 +363,8 @@ border-radius: 10px;
 }
 /* TODO: Only works with others TODO's done*/
 .song{
-  width: 20px;
-  height:20px;
-  position: relative;
-  top: 1px;
+  width: 300px;
+  height:50px;
 }
 
 /* bottom player */
