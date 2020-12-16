@@ -21,7 +21,7 @@ if (name !== "") {
  playClick.addEventListener('click',
    function() {
      playBar.innerHTML = '<audio src="audio/ACDC.mp3" type="audio/mpeg" class="song" autoplay controls>';
-     imgCover.innerHTML = '<img src="img/Acdc.jpg" alt="">';
+     imgCover.innerHTML = '<img src="img/acdc.jpg" alt="">';
      songName.innerHTML = '<h3 class="colored-white bl-strong">Ac-Dc</h3>' + '<h4 class="colored-dark-grey bl-strong">Shot in the dark<br class="phone-specs"> 2020</h4>';
    }
  );
